@@ -1,8 +1,10 @@
+import Register from "./pages/register/Register.jsx"
+
 
 function App() {
   return (
     <div className="App">
-    hey
+      <Register/>
     </div>
   );
 }
