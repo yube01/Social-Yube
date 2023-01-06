@@ -1,5 +1,6 @@
 import React from 'react'
 import "./login.scss"
+import { Link } from 'react-router-dom'
 
 
 
@@ -19,9 +20,12 @@ const Login = () => {
           <span>
             Don't have a account?
           </span>
+          <Link to="/register">
           <button>
             Register
           </button>
+          </Link>
+        
 
           </div>
          
