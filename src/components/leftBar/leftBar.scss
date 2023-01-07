@@ -1,0 +1,64 @@
+.leftBar{
+    flex: 2;
+    
+    
+    display: flex;
+    padding: 1rem 2rem;
+    overflow: none;
+
+
+    position: sticky;
+    top: 3rem;
+    height: calc(100vh - 3rem);
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    
+
+    .menu{
+        
+        .profile{
+            display: flex;
+            align-items: center;
+            img{
+                height: 2rem;
+                width: 2rem;
+                border-radius: 50%;
+                margin-right: 0.5rem;
+
+            }
+        }
+        
+
+        hr{
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            border: none;
+            border-bottom:0.5px solid rgba(128, 128, 128, 0.404) ;
+        }
+        span{
+            font-size: 0.8rem;
+            
+        }
+        
+     
+        
+
+        .items{
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            img{
+                height: 1.5rem;
+
+            }
+            span{
+                margin-left: 1rem;
+                font-size: 1rem;
+
+
+            }
+        }
+    }
+}

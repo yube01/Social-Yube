@@ -2,6 +2,9 @@
     padding: 0.5rem 1rem;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
     border-bottom: 1px solid rgba(74, 73, 73, 0.204);
     .left{
         display: flex;
