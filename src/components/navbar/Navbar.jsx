@@ -36,7 +36,7 @@ const navbar = () => {
         <EmailIcon/>
         <NotificationsIcon/>
         <div className="person">
-          <img src="" alt="" />
+          <img src="https://images.pexels.com/photos/9746/people-mother-family-father.jpg" alt="" />
           <span>
             John Curry
           </span>

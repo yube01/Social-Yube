@@ -11,12 +11,13 @@ const rightBar = () => {
         
         <div className="user">
         <div className="userInfo">
-          <img src="" alt="" />
+          <img src="https://images.pexels.com/photos/9746/people-mother-family-father.jpg" alt="" />
           <span> Jane Smith</span>
         </div>
         <div className="btn">
-          <button> Follow</button>
-          <button> Unfollow</button>
+        <button> <span> Follow</span> </button>
+        <button> <span> Unfollow</span></button>
+          
         </div>
       </div>
       </div>
@@ -24,12 +25,12 @@ const rightBar = () => {
       
         <div className="user">
         <div className="userInfo">
-          <img src="" alt="" />
+          <img src="https://images.pexels.com/photos/9746/people-mother-family-father.jpg" alt="" />
           <span> Jane Smith</span>
         </div>
         <div className="btn">
-          <button> Follow</button>
-          <button> Unfollow</button>
+          <button> <span> Follow</span> </button>
+          <button> <span> Unfollow</span></button>
         </div>
       </div>
       </div>
@@ -43,17 +44,18 @@ const rightBar = () => {
        
         <div className="user">
         <div className="userInfo">
-          <img src="" alt="" />
+          <img src="https://images.pexels.com/photos/9746/people-mother-family-father.jpg" alt="" />
           <p>
           <span> Jane Smith</span>
           liked the post
 
           </p>
-          <span>
-            1 min ago
-          </span>
+       
          
         </div>
+        <div className="timeStamp">
+          <span>  1 min ago </span>
+         </div>
        
       </div>
       </div>
@@ -61,17 +63,18 @@ const rightBar = () => {
        
        <div className="user">
        <div className="userInfo">
-         <img src="" alt="" />
+         <img src="https://images.pexels.com/photos/9746/people-mother-family-father.jpg" alt="" />
          <p>
          <span> Jane Smith</span>
          liked the post
 
          </p>
-         <span>
-           1 min ago
-         </span>
+        
         
        </div>
+       <div className="timeStamp">
+          <span>  1 min ago </span>
+         </div>
       
      </div>
      </div>
@@ -79,17 +82,18 @@ const rightBar = () => {
        
        <div className="user">
        <div className="userInfo">
-         <img src="" alt="" />
+         <img src="https://images.pexels.com/photos/9746/people-mother-family-father.jpg" alt="" />
          <p>
          <span> Jane Smith</span>
          liked the post
 
          </p>
-         <span>
-           1 min ago
-         </span>
+         
         
        </div>
+       <div className="timeStamp">
+          <span>  1 min ago </span>
+         </div>
       
      </div>
      </div>
@@ -97,17 +101,18 @@ const rightBar = () => {
        
        <div className="user">
        <div className="userInfo">
-         <img src="" alt="" />
+         <img src="https://images.pexels.com/photos/9746/people-mother-family-father.jpg" alt="" />
          <p>
          <span> Jane Smith</span>
          liked the post
 
          </p>
-         <span>
-           1 min ago
-         </span>
+        
         
        </div>
+       <div className="timeStamp">
+          <span>  1 min ago </span>
+         </div>
       
      </div>
      </div>
@@ -115,23 +120,25 @@ const rightBar = () => {
        
        <div className="user">
        <div className="userInfo">
-         <img src="" alt="" />
+         <img src="https://images.pexels.com/photos/9746/people-mother-family-father.jpg" alt="" />
          <p>
          <span> Jane Smith</span>
          liked the post
 
          </p>
-         <span>
-           1 min ago
-         </span>
+         
         
        </div>
+       <div className="timeStamp">
+          <span>  1 min ago </span>
+         </div>
       
      </div>
      </div>
         
 
       </div>
+   
       <div className="container">
         <span>
           Online Friends
@@ -140,23 +147,90 @@ const rightBar = () => {
        
        <div className="user">
        <div className="userInfo">
-        <div className="greenDot">
-        <img src="" alt="" />
+        
+        <img src="https://images.pexels.com/photos/9746/people-mother-family-father.jpg" alt="" />
+         <div className="online" />
+        <span> Jane Smith</span>
         </div>
-         
-         
-         <span> Jane Smith</span>
-         
-
-        
-         
-        
-       </div>
       
      </div>
      </div>
+     <div className="items">
+       
+       <div className="user">
+       <div className="userInfo">
+        
+        <img src="https://images.pexels.com/photos/9746/people-mother-family-father.jpg" alt="" />
+         <div className="online" />
+        <span> Jane Smith</span>
+        </div>
+      
+     </div>
+     </div>
+     <div className="items">
+       
+       <div className="user">
+       <div className="userInfo">
+        
+        <img src="https://images.pexels.com/photos/9746/people-mother-family-father.jpg" alt="" />
+         <div className="online" />
+        <span> Jane Smith</span>
+        </div>
+      
+     </div>
+     </div>
+     <div className="items">
+       
+       <div className="user">
+       <div className="userInfo">
+        
+        <img src="https://images.pexels.com/photos/9746/people-mother-family-father.jpg" alt="" />
+         <div className="online" />
+        <span> Jane Smith</span>
+        </div>
+      
+     </div>
+     </div>
+     <div className="items">
+       
+       <div className="user">
+       <div className="userInfo">
+        
+        <img src="https://images.pexels.com/photos/9746/people-mother-family-father.jpg" alt="" />
+         <div className="online" />
+        <span> Jane Smith</span>
+        </div>
+      
+     </div>
+     </div>
+     <div className="items">
+       
+       <div className="user">
+       <div className="userInfo">
+        
+        <img src="https://images.pexels.com/photos/9746/people-mother-family-father.jpg" alt="" />
+         <div className="online" />
+        <span> Jane Smith</span>
+        </div>
+      
+     </div>
+     </div>
+     <div className="items">
+       
+       <div className="user">
+       <div className="userInfo">
+        
+        <img src="https://images.pexels.com/photos/9746/people-mother-family-father.jpg" alt="" />
+         <div className="online" />
+        <span> Jane Smith</span>
+        </div>
+      
+     </div>
+     </div>
+     
 
       </div>
+      
       
      
     </div>

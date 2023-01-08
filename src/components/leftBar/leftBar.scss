@@ -3,8 +3,8 @@
     
     
     display: flex;
-    padding: 1rem 2rem;
-    overflow: none;
+    padding: 1rem;
+    overflow: scroll;
 
 
     position: sticky;
@@ -38,7 +38,7 @@
             border-bottom:0.5px solid rgba(128, 128, 128, 0.404) ;
         }
         span{
-            font-size: 0.8rem;
+            font-size: 1rem;
             
         }
         
