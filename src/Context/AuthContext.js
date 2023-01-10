@@ -14,7 +14,7 @@ export const AuthContextProvider = ({ children}) =>{
             setCurrentUser({
                 id:1,
                 name:"John Smith",
-                profilePic:"https://images.pexels.com/photos/9746/people-mother-family-father.jpg"
+                profilePic:"https://images.pexels.com/photos/7726306/pexels-photo-7726306.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             });
             
         }
