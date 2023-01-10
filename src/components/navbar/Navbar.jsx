@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./navbar.scss"
 import HomeIcon from '@mui/icons-material/Home';
 import NightlightIcon from '@mui/icons-material/Nightlight';
@@ -8,8 +8,18 @@ import PersonIcon from '@mui/icons-material/Person';
 import EmailIcon from '@mui/icons-material/Email';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../Context/AuthContext';
 
-const navbar = () => {
+
+
+const Navbar = () => {
+
+  
+  const {currentUser } = useContext(AuthContext);
+  
+
+
+
   return (
     <div className="navbar">
       <div className="left">
@@ -36,9 +46,9 @@ const navbar = () => {
         <EmailIcon/>
         <NotificationsIcon/>
         <div className="person">
-          <img src="https://images.pexels.com/photos/9746/people-mother-family-father.jpg" alt="" />
+          <img src={currentUser.profilePic} alt="" />
           <span>
-            John Curry
+           {currentUser.name}
           </span>
         </div>
       </div>
@@ -46,4 +56,4 @@ const navbar = () => {
   )
 }
 
-export default navbar
+export default Navbar

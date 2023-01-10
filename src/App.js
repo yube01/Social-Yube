@@ -10,14 +10,20 @@ import LeftBar from "./components/leftBar/LeftBar.jsx";
 import RightBar from "./components/rightBar/RightBar.jsx";
 import Home from "./pages/home/Home.jsx"
 import Profile from "./pages/profile/Profile.jsx"
+import { useContext } from "react";
+import { DarkModeContext } from "./Context/darkModeContext.js";
+import { AuthContext } from "./Context/AuthContext.js";
+
 const App = () => {
 
-  const currentUser = true; // for not letting user to navigate without loging to website
+  const {currentUser} = useContext(AuthContext)
 
+  const {darkMode} = useContext(DarkModeContext)
+  
 
   const Layout  = ()=>{
     return(
-      <div>
+      <div className={`theme-${darkMode ? "dark" :"light"}`}>
         <Navbar/>
         <div style={{display:"flex"}}>
           <LeftBar/>
@@ -51,7 +57,7 @@ const App = () => {
       element: <ProtectedRoute> <Layout/> </ProtectedRoute>,
       children:[
         {
-          path:"/home",
+          path:"/",
           element:<Home/>
         },
         {
