@@ -12,25 +12,25 @@ const Stories = () => {
         {
             id:1,
             name:"Smith",
-            img:"https://images.pexels.com/photos/9746/people-mother-family-father.jpg"
+            profilePic:"https://images.pexels.com/photos/9746/people-mother-family-father.jpg"
            
         },
         {
             id:2,
             name:"Smih",
-            img:"https://images.pexels.com/photos/9746/people-mother-family-father.jpg"
+            profilePic:"https://images.pexels.com/photos/9746/people-mother-family-father.jpg"
             
         },
         {
-            id:2,
+            id:3,
             name:"Smih",
-            img:"https://images.pexels.com/photos/9746/people-mother-family-father.jpg"
+            profilePic:"https://images.pexels.com/photos/9746/people-mother-family-father.jpg"
             
         },
         {
-            id:2,
+            id:4,
             name:"Smih",
-            img:"https://images.pexels.com/photos/9746/people-mother-family-father.jpg"
+            profilePic:"https://images.pexels.com/photos/9746/people-mother-family-father.jpg"
             
         },
   
@@ -45,8 +45,8 @@ const Stories = () => {
                 <span> {currentUser.name} </span>
             </div>
         {stories.map(story=>(
-            <div className="story">
-                <img src={story.img} alt="" />
+            <div className="story" key={story.id}>
+                <img src={story.profilePic} alt="" />
                 <span> {story.name} </span>
             </div>
         ))}
