@@ -1,12 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Post.scss"
 import { Link } from 'react-router-dom'
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import CommentIcon from '@mui/icons-material/Comment';
 import ShareIcon from '@mui/icons-material/Share';
+import Comment from '../comment/Comment';
 
 const Post = ({post}) => {
+
+
+  const [openComment , setOpenComment] = useState(false)
+
+
+
   return (
    <div className="post">
     <div className="container">
@@ -41,7 +48,7 @@ const Post = ({post}) => {
 
         </div>
         <div className="items">
-        <CommentIcon/>
+        <CommentIcon onClick={()=> setOpenComment(!openComment)} />
         Comment
 
         </div>
@@ -51,12 +58,8 @@ const Post = ({post}) => {
        Share
 
         </div>
-        
-        
-        
-       
-
       </div>
+      { openComment && <Comment/>}
     </div>
    </div>
     
