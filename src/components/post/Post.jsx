@@ -49,7 +49,7 @@ const Post = ({post}) => {
         </div>
         <div className="items">
         <CommentIcon onClick={()=> setOpenComment(!openComment)} />
-        Comment
+        4 Comment
 
         </div>
         <div className="items">
