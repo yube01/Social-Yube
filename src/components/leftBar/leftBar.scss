@@ -1,3 +1,5 @@
+@import "../../style.scss";
+
 .leftBar{
     flex: 2;
     
@@ -10,6 +12,9 @@
     position: sticky;
     top: 3rem;
     height: calc(100vh - 3rem);
+    @include mobile{
+        display: none;
+    }
 
     &::-webkit-scrollbar{
         display: none;

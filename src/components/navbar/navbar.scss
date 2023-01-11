@@ -1,3 +1,5 @@
+@import "../../style.scss";
+
 .navbar{
     padding: 0.5rem 1rem;
     display: flex;
@@ -7,10 +9,12 @@
     background-color: #fff;
     border-bottom: 1px solid rgba(74, 73, 73, 0.204);
     z-index: 3;
+    
     .left{
         display: flex;
         align-items: center;
         gap: 1rem;
+        
         span{
             font-size: 1.5rem;
             font-weight: 700;
@@ -28,6 +32,9 @@
                 border: none;
                 outline: none;
                 width: 15rem;
+                @include mobile{
+                    display: none;
+                }
             }
         }
 
@@ -36,6 +43,9 @@
         display: flex;
         align-items: center;
         gap: 1rem;
+        @include mobile{
+            display: none;
+        }
 
 
         .person{
