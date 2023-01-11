@@ -24,7 +24,7 @@ const LeftBar = () => {
   return (
     <div className="leftBar">
       <div className="menu">
-        <div className="profile">
+        <div className="profilee">
         <img src={currentUser.profilePic} alt="" />
         <span> 
           {currentUser.name}

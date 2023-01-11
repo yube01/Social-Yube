@@ -9,6 +9,8 @@ import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import LanguageIcon from '@mui/icons-material/Language';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import Posts from "../../components/posts/Posts"
+
 
 
 
@@ -19,11 +21,10 @@ const Profile = () => {
       <div className="images">
         <img src="https://images.pexels.com/photos/12366061/pexels-photo-12366061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" className='cover'  />
         <img src="https://images.pexels.com/photos/14336506/pexels-photo-14336506.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" className='profilePic'/>
-        <h1>
-          John Smith
-        </h1>
+       
 
       </div>
+      <div className="profileInfos">
       <div className="left">
         <a href="https://www.facebook.com">
           <FacebookIcon/>
@@ -43,20 +44,34 @@ const Profile = () => {
         
       </div>
       <div className="center">
+        <span className='name'> John Smith</span>
+        <div className="item">
         <div className="items">
-          <FmdGoodIcon/>
+          <FmdGoodIcon fontSize='small'/>
           <span> USA</span>
         </div>
         <div className="items">
-          <LanguageIcon/>
+          <LanguageIcon fontSize='small'/>
           <span> besocial.</span>
         </div>
+
+        </div>
+        
+        <button>
+          Follow
+        </button>
       </div>
       <div className="right">
         <MailOutlineIcon/>
         <MoreVertIcon/>
       </div>
+
+      </div>
+      <Posts/>
+      
+    
     </div>
+    
   )
 }
 
