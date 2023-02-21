@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "./Post.scss"
+import "./post.scss"
 import { Link } from 'react-router-dom'
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';

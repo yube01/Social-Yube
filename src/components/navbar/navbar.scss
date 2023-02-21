@@ -9,11 +9,15 @@
     background-color: #fff;
     border-bottom: 1px solid rgba(74, 73, 73, 0.204);
     z-index: 3;
+   
     
     .left{
         display: flex;
         align-items: center;
         gap: 1rem;
+        @include mobile{
+            gap: 2.5rem;
+        }
         
         span{
             font-size: 1.5rem;
