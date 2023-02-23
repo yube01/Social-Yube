@@ -1,10 +1,20 @@
+@import "../../style.scss";
+
+
 .register{
     background: linear-gradient(rgb(199, 36, 231),rgb(56, 56, 237));
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    @include mobile{
+        width: 100vw;
+        padding: 1rem 2rem;
+        height: 100vh;
+    }
 
+
+   
 
     .card{
 
@@ -14,6 +24,13 @@
         width: 50vw;
         overflow: hidden;
         flex-direction: row-reverse;
+        @include mobile{
+            width: 100vw;
+            display: flex;
+            flex-direction: column-reverse;
+            height: 90vh;
+        }
+    
 
         .left{
             flex: 1;
@@ -21,11 +38,22 @@
             background-size: cover;
             padding: 2rem;
             color: white;
-           
+            @include mobile{
+                padding: 1rem 2rem;
+                font-size: 1rem;
+                
+                
+            }
+        
 
             h1{
-                font-size: 4rem;
+                font-size: 4em;
                 margin-bottom: 1rem;
+                @include mobile{
+                    font-size: 1.5em;
+                }
+            
+                
             }
             p{
                 margin-bottom: 1rem;
@@ -55,10 +83,21 @@
         .right{
             flex: 1;
             padding: 2rem;
+            @include mobile{
+                
+                padding: 1rem 2rem;
+            }
+        
 
 
             h1{
                 font-size: 3rem;
+                @include mobile{
+                    font-size: 2rem;
+                    margin-top: 1rem;
+                    
+                }
+            
                 
             }
 
@@ -75,6 +114,10 @@
                     margin-top: 2rem;
                     border-bottom: 0.1rem solid rgba(47, 46, 46, 0.712);
                     padding: 1rem 0;
+                    @include mobile{
+                        margin-top: 0.5rem;
+                    }
+                
                     
                     
                 }
