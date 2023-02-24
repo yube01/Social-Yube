@@ -15,7 +15,7 @@ const Login = () => {
     password:""
   })
 
-  const [err , setErr]  =useState(false)
+  const [err , setErr]  =useState(null)
 
 
   const handleChange = (e)=>{
@@ -32,8 +32,8 @@ const Login = () => {
 
     try {
       await axios.post("http://localhost:5555/api/auth/register", inputs)
-    } catch (error) {
-      setErr(true)
+    } catch (err) {
+      setErr(err.response.data)
       
     }
     console.log(err)
@@ -77,10 +77,14 @@ const Login = () => {
             <input type="email" placeholder='Email' name="email" onChange={handleChange} />
             <input type="text" placeholder='Name'  name="name" onChange={handleChange} />
             <input type="password" placeholder='Password' name="password" onChange={handleChange} />
+            
+           
+            
           </form>
           <button onClick={handleClick}>
             Register
           </button>
+         
         </div>
       </div>
     </div>
