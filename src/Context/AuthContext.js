@@ -11,7 +11,7 @@ export const AuthContextProvider = ({ children}) =>{
 
         
         const login = async(inputs) =>{
-            const res = axios.post("http://localhost:5555/api/auth/login",inputs,{
+            const res = await axios.post("http://localhost:5555/api/auth/login",inputs,{
                  withCredentials:true
             })
 

@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import "./login.scss"
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../Context/AuthContext'
 
 
@@ -9,12 +9,13 @@ const Login = () => {
 
   const [inputs, setInputs]= useState({
     username:"",
-   
     password:""
   })
 
   const [err , setErr]  =useState(null)
 
+
+  const navigate = useNavigate();
 
   const handleChange = (e)=>{
     setInputs((prev)=>
@@ -31,6 +32,7 @@ const Login = () => {
     e.preventDefault();
     try {
      await login(inputs);
+     navigate("/")
     } catch (error) {
       setErr(err.response.data)
       
